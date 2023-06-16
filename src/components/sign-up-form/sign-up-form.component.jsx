@@ -59,7 +59,7 @@ const SignUpForm = () => {
       <form onSubmit={handleSubmit}>
         <FormInput
           label={'Display Name'}
-          requires
+          required
           type="text"
           onChange={hadleChange}
           name="displayName"
@@ -67,7 +67,7 @@ const SignUpForm = () => {
         />
         <FormInput
           label={'Email'}
-          requires
+          required
           type="email"
           onChange={hadleChange}
           name="email"
@@ -75,7 +75,7 @@ const SignUpForm = () => {
         />
         <FormInput
           label={'Password'}
-          requires
+          required
           type="password"
           onChange={hadleChange}
           name="password"
@@ -83,7 +83,7 @@ const SignUpForm = () => {
         />
         <FormInput
           label={'Confirm Password'}
-          requires
+          required
           type="password"
           onChange={hadleChange}
           name="confirmPassword"
