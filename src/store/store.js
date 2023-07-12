@@ -4,7 +4,9 @@ import logger from 'redux-logger';
 import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from 'redux-persist';
 
-const middleWares = [logger];
+const middleWares = [process.env.NODE_ENV !== 'production' && logger].filter(
+  Boolean
+);
 
 const persistConfig = {
   key: 'root',
